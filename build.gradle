@@ -1,0 +1,25 @@
+
+buildscript {
+    repositories {
+        maven {url 'https://developer.huawei.com/repo/'}
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'androidx.benchmark:benchmark-gradle-plugin:1.0.0'
+        classpath 'com.huawei.agconnect:agcp:1.6.0.300'
+        classpath 'com.android.tools.build:gradle:4.0.1'
+    }
+}
+
+allprojects {
+    repositories {
+        maven {url 'https://developer.huawei.com/repo/'}
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

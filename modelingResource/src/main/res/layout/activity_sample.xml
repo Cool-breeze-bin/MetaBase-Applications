@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.huawei.hms.magicresource.view.SceneSampleView
+        android:id="@+id/sceneview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.huawei.hms.magicresource.view.SceneSampleView>
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/change_model"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:text="切换模型"
+        android:textColor="@color/upsdk_white"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:padding="5dp"
+        android:background="@color/transparent"
+        tools:ignore="RelativeOverlap" />
+    <Button
+        android:id="@+id/btn_bg"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:text="切换背景"
+        android:textColor="@color/upsdk_white"
+        android:textStyle="bold"
+        android:textSize="16dp"/>
+
+</RelativeLayout>
